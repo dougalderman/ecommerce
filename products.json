@@ -1,0 +1,33 @@
+var products = [
+    {
+        "name": "mouse",
+        "vendor": "Microsoft",
+        "price": 12.99,
+        "color": "black"
+    },
+    {
+        "name": "keyboard",
+        "vendor": "Dell",
+        "price": 21.99,
+        "color": "blue"
+    },
+    {
+        "name": "monitor",
+        "vendor": "Toshiba",
+        "price": 139.99,
+        "color": "black"
+    },
+    {
+        "name": "computer",
+        "vendor": "Dell",
+        "price": 349.99,
+        "color": "green"
+    },
+    {
+        "name": "keyboard",
+        "vendor": "Microsoft",
+        "price": 35.49,
+        "color": "gray"
+    }
+]
+    
