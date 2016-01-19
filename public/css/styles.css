@@ -9,8 +9,86 @@ html, body {
 
 .products {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 400px;
+    /* justify-content: center;
+    align-items: center; */
+    width: 80%;
+    margin: 10px auto;
+    padding-top: 40px;
+}
+
+.product {
+    height: 75px;
+    display: block;
+    text-align: left;
+    width: 30%;
+    margin: 0 10px;
+}
+
+.name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.price {
+    color: blue;
+    font-size: 1em;
+}
+
+.color {
+    font-size: 1em;
 }
 
 h2 {
     text-align: center;
+    font-size: 2.5em;
+    font-family: Arial;
+    color: crimson;
 }
+
+.icons img:hover {
+    cursor: pointer;
+}
+
+.product input {
+    width: 75%;
+}
+
+.addProduct {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.addProduct a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgba(115, 0, 128, 0.85);
+}
+
+.newProduct {
+    height: 300px;
+}
+
+.newProduct div {
+    display: block;
+    margin: 40px 20px;
+    font-family: Arial;
+    font-size: 1em;
+}
+
+.newProduct input {
+   height: 30px;
+   padding-left: 20px;
+   font-size: 0.8em;
+}
+
+.newProduct .button {
+   height: 30px;
+   width: 100px;
+   font-family: Arial;
+   font-size: 0.8em;
+   background-color: lightblue;
+   text-align: center;
+ }

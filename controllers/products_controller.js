@@ -55,8 +55,13 @@ module.exports = {
             update: { $set: req.body},  // $set--just set one property of object
             new: false
         }
+        
+        console.log('in update');
+        console.log('updateObject = ', updateObject);
     
         db.products.findAndModify(updateObject, function(err, result) {
+            console.log('err = ', err);
+            console.log('result = ', result);
             if (err) {
                 res.status(500).send("Failed to modify")
             }

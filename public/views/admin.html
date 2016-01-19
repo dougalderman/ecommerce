@@ -1,10 +1,15 @@
 <h2>Products</h2>
 <div class="products">
-      <div class="products" ng-repeat="product in products">
-            <div>{{product.vendor}} {{product.name }} </div>
-            <div>{{product.price}} </div>
-            <div>{{product.color}} </div>
-            <br>
-      </div>
-      <hr>
- </div>
+      <div class="product" ng-repeat="product in products">
+            <div class="name">{{product.vendor}} {{product.name }} </div>
+            <input type="text" class="price" ng-model="product.price" >
+            <input type="text" class="color" ng-model="product.color">
+            <div class="icons">
+                <img ng-click="deleteProd(product)" src="images/delete_icon.jpg" height="20">
+                <img ng-click="updateProd(product)" src="images/update_icon.jpg" height="20">
+            </div>
+       </div>
+</div>
+<div class="addProduct">
+    <a ui-sref="newItem">Add New Item</a>
+</div>

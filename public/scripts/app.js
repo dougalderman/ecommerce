@@ -12,6 +12,11 @@ angular.module('ecommerce', ['ui.router'])
 		url: '/admin',
 		templateUrl: 'views/admin.html',
 		controller: 'adminCtrl'
+	})
+    .state('newItem', {
+		url: '/admin/newItem',
+		templateUrl: 'views/newItem.html',
+		controller: 'newItemCtrl'
 	});
 
 	$urlRouterProvider.otherwise('/home');
