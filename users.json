@@ -1,0 +1,12 @@
+var users = [
+    {
+        "email": "dan123@hotmail.com",
+        "username": "awesomedan",
+        "password": "123",
+    },
+    {
+        "email": "tina32@yahoo.com",
+        "username": "tina",
+        "password": "123"
+    }
+]
