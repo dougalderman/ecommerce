@@ -39,7 +39,7 @@ module.exports = {
          console.log('in update');
          console.log('req.params.id = ', req.params.id);
          console.log('req.body = ', req.body);
-         usersModel.findByIdAndUpdate(req.params.id, req.body, function (err, result) {
+         usersModel.findByIdAndUpdate(req.params.id, req.body, {new: true}, function (err, result) {
             if (err)
                 return res.status(500).send(err);
              else                                          

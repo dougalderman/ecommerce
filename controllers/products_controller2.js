@@ -39,12 +39,40 @@ module.exports = {
          console.log('in update');
          console.log('req.params.id = ', req.params.id);
          console.log('req.body = ', req.body);
-         productsModel.findByIdAndUpdate(req.params.id, req.body, function (err, result) {
-            if (err)
-                return res.status(500).send(err);
-             else                                          
-                res.send(result);  
-        });
+        
+         productsModel
+        .findById(req.params.id)
+        .exec(function(err, result) {
+             console.log('err', err);
+             console.log('result', result);
+             if (err) {
+                 console.log('in error routine');
+                 return res.status(500).send(err);
+             }
+             else {
+                  for (var p in req.body) {
+                      if (req.body.hasOwnProperty(p)) {
+                          result[p] = req.body[p];
+                      }
+                  }
+                  result.save(function(err, result) {
+                    if (err)
+                        return res.status(500).send(err);
+                    else
+                        res.send(result);  
+                })
+             }
+         })
+                  
+
+        
+        
+//         productsModel.findByIdAndUpdate(req.params.id, req.body, function (err, result) {
+//            if (err)
+//                return res.status(500).send(err);
+//             else                                          
+//                res.send(result);  
+//        });
     },
     
     delete: function(req, res) {
