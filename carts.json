@@ -1,4 +1,14 @@
-{
-    "product": "569ed1457d3f38c814a9cee9",
-    "qty": 2
-}
+[
+    {
+        "product": "569ed1457d3f38c814a9cee9",
+        "qty": 2
+    },
+    {
+        "product": "569ed11e7d3f38c814a9cee8",
+        "qty": 4
+    },
+    {
+        "product": "569ed3487d3f38c814a9ceed",
+        "qty": 7
+    }
+]

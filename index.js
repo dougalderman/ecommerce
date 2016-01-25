@@ -37,7 +37,7 @@ app.put('/users/:id', usersCtrl.update);
 app.delete('/users/:id', usersCtrl.delete);
 
 app.get('/api/order', ordersCtrl.read);
-app.post('api/order', ordersCtrl.create)
+app.post('/api/order', ordersCtrl.create)
 
 app.post('/api/cart', cartsCtrl.create);
 app.put('/api/cart', cartsCtrl.update);
